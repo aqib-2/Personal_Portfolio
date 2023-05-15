@@ -1,4 +1,4 @@
-const ham=document.getElementById("ham");
+const ham=document.getElementById('ham');
 const menu=document.getElementById("menu");
 const close=document.getElementById("close");
 const list=document.getElementById("list");
