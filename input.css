@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar Styling */
+html{
+    scrollbar-width: thin;
+    scrollbar-color: #2563EB transparent;
+}
+html::-webkit-scrollbar{
+    width: 4vw;
+    height:15vw;
+}
+html::-webkit-scrollbar-thumb{
+    background: #2563EB;
+}
+
+/* Font style for website */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* bottom shadow for navigation bar */
+.nav-shadow{
+    box-shadow:  rgba(0, 0, 0, 0.12) 0px 5px 5px, rgba(0, 0, 0, 0.12) 0px 4px 5px;
+}
+
+/* waving animation for the hand placed in hero section */
+.wave {
+    animation: wave-animation 3s infinite;  
+    transform-origin: 75% 75%;       
+    display: inline-block;
+  }
+
+/* Changing border radius animation for profile picture */
+.profile-border{
+    box-shadow: -10px -5px 50px rgba(0,0,0,0.2);
+    border-radius: 38% 62% 14% 86% / 66% 55% 45% 34%;
+    animation: wavy-edges 10s  infinite;  
+}  
+
+/* background for the circular container */
+.working-man{
+    background-image: url(assets/working-man.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+}
+
+/* styling of the website project */
+.car-rental{
+    height: 22rem;
+    background: url(assets/car-rental-ss.png);
+    background-size:cover ;
+    background-position: top;
+    transition: ease-in-out 3s;
+}
+.car-rental:hover {
+    background-position: bottom;
+}
+.crickeeda{
+    height: 22rem;
+    background: url(assets/criCKeeda-ss.png);
+    background-size:cover ;
+    background-position: top;
+    transition: ease-in-out 3s;
+}
+.crickeeda:hover {
+    background-position: bottom;
+}
+/* Rotating animation for the circular container */
+.effect{
+    animation: rotation 8s linear infinite;
+}
+.effect span{
+    position: absolute;
+    left: 50%;
+    padding: .5rem;
+    transform-origin: 0 140px;
+}
+@media (min-width:768px) {
+    .effect span{
+        transform-origin:0 200px;
+    }  
+}
+
+
+
+@keyframes wave-animation {
+    0%  { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) } 
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  
+   100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes wavy-edges {
+    0%   { border-radius: 38% 62% 14% 86% / 66% 55% 45% 34%; }
+    20%  { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+    40%  { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    60%  { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+    80%  { border-radius: 63% 57% 88% 22% / 33% 78% 52% 77%; }
+   100%  { border-radius: 38% 62% 14% 86% / 66% 55% 45% 34%; }
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+} 
