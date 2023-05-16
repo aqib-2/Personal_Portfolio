@@ -10,8 +10,8 @@ html{
     scrollbar-color: #2563EB transparent;
 }
 ::-webkit-scrollbar{
-    width: 4vw;
-    height:15vw;
+    width: 1.5vw;
+    height: 10vw;
 }
 ::-webkit-scrollbar-thumb{
     background: #2563EB;
