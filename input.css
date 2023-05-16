@@ -9,11 +9,11 @@ html{
     scrollbar-width: thin;
     scrollbar-color: #2563EB transparent;
 }
-html::-webkit-scrollbar{
+::-webkit-scrollbar{
     width: 4vw;
     height:15vw;
 }
-html::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{
     background: #2563EB;
 }
 
